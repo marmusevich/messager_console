@@ -35,13 +35,15 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="private/CCriptedMessage.h" />
-		<Unit filename="private/CTextData.h" />
-		<Unit filename="private/CTextMessage.h" />
+		<Unit filename="include/CMessageFabrica.h" />
 		<Unit filename="include/IData.h" />
 		<Unit filename="include/IMessage.h" />
+		<Unit filename="private/CCriptedMessage.h" />
+		<Unit filename="private/CMessageFabrica.cpp" />
 		<Unit filename="private/CTextData.cpp" />
+		<Unit filename="private/CTextData.h" />
 		<Unit filename="private/CTextMessage.cpp" />
+		<Unit filename="private/CTextMessage.h" />
 		<Unit filename="test/main.cpp" />
 		<Extensions>
 			<code_completion />
