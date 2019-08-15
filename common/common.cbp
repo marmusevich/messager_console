@@ -44,7 +44,7 @@
 		<Unit filename="private/CTextData.h" />
 		<Unit filename="private/CTextMessage.cpp" />
 		<Unit filename="private/CTextMessage.h" />
-		<Unit filename="test/main.cpp" />
+		<Unit filename="test/CMessageTest.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
