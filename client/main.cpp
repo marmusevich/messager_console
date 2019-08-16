@@ -18,9 +18,12 @@ int main()
 
     boost::shared_ptr<IMessage> mes( new CTextMessage());
 
-    mes->set(new CTextData("test"));
-
+    mes->set(new CTextData("test test 11111111111"));
     net.send(*mes);
+
+    mes->set(new CTextData("test test 222222222222"));
+    net.send(*mes);
+
 
     return 0;
 }

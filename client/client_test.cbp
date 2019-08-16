@@ -2,7 +2,7 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="client" />
+		<Option title="client_test" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
@@ -40,13 +40,13 @@
 			<Add option="-std=c++0x" />
 			<Add option="-fexceptions" />
 			<Add directory="../common/include" />
-			<Add directory="include" />
 		</Compiler>
 		<Unit filename="include/CConsoleReciver.h" />
 		<Unit filename="include/CNet.h" />
 		<Unit filename="include/IMessageReciver.h" />
-		<Unit filename="main.cpp" />
 		<Unit filename="private/CNet.cpp" />
+    	<Unit filename="test/CNetTest.cpp" />
+
 		<Extensions>
 			<code_completion />
 			<envvars />

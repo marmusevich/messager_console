@@ -23,7 +23,6 @@ bool CNet::send(const IMessage& message)
     return ret;
 }
 
-
 CNet::~CNet()
 {
 
