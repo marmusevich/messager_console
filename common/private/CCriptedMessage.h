@@ -2,6 +2,7 @@
 #define CCRIPTEDMESSAGE_H
 
 #include <IMessage.h>
+        #include <boost/shared_ptr.hpp>
 
 
 class CCriptedMessage : public IMessage
@@ -10,28 +11,38 @@ public:
     /**
      *  \param
      */
-    explicit CCriptedMessage(const IMessage& parent);
+    explicit CCriptedMessage(const IMessage* parent)
+    : mParent(parent)
+    {
+
+    }
 
     /**
      *  \param data
      */
-    virtual void set(const IData* data)
+    virtual void set(IData* data)
     {
-        parent.set(data);
+        if (mParent != nullptr)
+        {
+            mParent.set(data);
+        }
     }
 
     /**
      *  \return
      */
-    virtual const IData* get()
+    virtual const IData* get() const
     {
-        return parent.get();
+        IData* ret = nullptr;
+        if (mParent != nullptr)
+        {
+            ret =mParent.get();
+        }
+        return ret;
     }
 
-    protected:
-
-    private:
-        const IMessage& mParent;
+private:
+    boost::shared_ptr<IMessage> mParent;
 };
 
 #endif // CCRIPTEDMESSAGE_H

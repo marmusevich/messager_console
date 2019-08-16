@@ -12,7 +12,7 @@ CTextData::CTextData(const CTextData& other)
 
 }
 
-const std::string& CTextData::getString()
+const std::string CTextData::getString() const
 {
     return mString;
 }

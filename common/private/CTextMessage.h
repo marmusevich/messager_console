@@ -12,22 +12,19 @@ public:
     /**
      *  \param
      */
-    explicit CTextMessage(const IMessage& parent);
+    CTextMessage();
 
     /**
      *  \param data
      */
-    virtual void set(const IData* data);
+    virtual void set(IData* data);
 
     /**
      *  \return
      */
-    virtual const IData* get();
-
-protected:
+    virtual const IData* get() const;
 
 private:
-    const IMessage& mParent;
     boost::shared_ptr<IData> mData;
 };
 

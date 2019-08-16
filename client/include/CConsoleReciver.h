@@ -19,19 +19,18 @@ public:
 
 virtual void recive(const IMessage& message)
 {
-/*    const IData* data = message.get();
+    const IData* data = message.get();
     if (data != nullptr)
     {
         print(*data);
     }
-    */
 }
 
 private:
 
 void print(const CTextData& data)
 {
-//    std::cout << data.getString() << std::endl;
+    std::cout <<"Resived message: " << data.getString() << std::endl;
 }
 
 void print(const IData& data)

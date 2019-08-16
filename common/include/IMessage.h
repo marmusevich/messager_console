@@ -10,11 +10,11 @@ public:
     /**
      *  \param data
      */
-    virtual void set(const IData* data) = 0;
+    virtual void set(IData* data) = 0;
     /**
      *  \return
      */
-    virtual const IData* get() = 0;
+    virtual const IData* get() const = 0;
 };
 
 #endif // IMESSAGE_H
