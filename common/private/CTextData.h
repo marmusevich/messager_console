@@ -22,7 +22,7 @@ public:
     /** Access mData
      * \return The message string
      */
-    const std::string getString();
+    const std::string& getString();
 
 protected:
 

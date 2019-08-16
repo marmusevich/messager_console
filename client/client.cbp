@@ -2,12 +2,12 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="common" />
+		<Option title="client" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="./../bin/Debug/common" prefix_auto="1" extension_auto="1" />
+				<Option output="./../bin/Debug/client" prefix_auto="1" extension_auto="1" />
 				<Option object_output="./../bin/obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -17,7 +17,7 @@
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="./../bin/Release/common" prefix_auto="1" extension_auto="1" />
+				<Option output="./../bin/Release/client" prefix_auto="1" extension_auto="1" />
 				<Option object_output="./../bin/obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -32,23 +32,20 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
-			<Add option="-std=c++11" />
+			<Add option="-std=c++0x" />
 			<Add option="-fexceptions" />
+			<Add directory="../common/include" />
 		</Compiler>
-		<Unit filename="include/CMessageFabrica.h" />
-		<Unit filename="include/IData.h" />
-		<Unit filename="include/IMessage.h" />
-		<Unit filename="private/CCriptedMessage.h" />
-		<Unit filename="private/CMessageFabrica.cpp" />
-		<Unit filename="private/CTextData.cpp" />
-		<Unit filename="private/CTextData.h" />
-		<Unit filename="private/CTextMessage.cpp" />
-		<Unit filename="private/CTextMessage.h" />
-		<Unit filename="test/CMessageTest.cpp" />
+		<Unit filename="include/CConsoleReciver.h" />
+		<Unit filename="include/CNet.h" />
+		<Unit filename="include/IMessageReciver.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="private/CNet.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
 			<debugger />
+			<lib_finder disable_auto="1" />
 		</Extensions>
 	</Project>
 </CodeBlocks_project_file>
