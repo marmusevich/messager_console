@@ -15,6 +15,10 @@
 					<Add option="-g" />
 					<Add directory="include" />
 				</Compiler>
+				<Linker>
+					<Add library="../bin/Debug/libcommon.a" />
+					<Add directory="../bin/Debug" />
+				</Linker>
 			</Target>
 			<Target title="Release">
 				<Option output="./../bin/Release/common" prefix_auto="1" extension_auto="1" />
@@ -27,23 +31,17 @@
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
+					<Add library="../bin/Release/libcommon.a" />
+					<Add directory="../bin/Release" />
 				</Linker>
 			</Target>
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
-			<Add option="-std=c++11" />
+			<Add option="-std=c++0x" />
 			<Add option="-fexceptions" />
+			<Add directory="../common/include" />
 		</Compiler>
-		<Unit filename="include/CMessageFabrica.h" />
-		<Unit filename="include/IData.h" />
-		<Unit filename="include/IMessage.h" />
-		<Unit filename="private/CCriptedMessage.h" />
-		<Unit filename="private/CMessageFabrica.cpp" />
-		<Unit filename="private/CTextData.cpp" />
-		<Unit filename="private/CTextData.h" />
-		<Unit filename="private/CTextMessage.cpp" />
-		<Unit filename="private/CTextMessage.h" />
 		<Unit filename="test/CMessageTest.cpp" />
 		<Extensions>
 			<code_completion />
