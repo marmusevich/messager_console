@@ -1,0 +1,3 @@
+[submodule "deliveries/libconfig"]
+	path = deliveries/libconfig
+	url = https://github.com/hyperrealm/libconfig
