@@ -1,18 +1,17 @@
 #include "CTextMessage.h"
 
-CTextMessage::CTextMessage(const IMessage& parent)
-: mParent(parent)
-, mData(nullptr)
+CTextMessage::CTextMessage()
+: mData()
 {
 
 }
 
-void CTextMessage::set(const IData* data)
+void CTextMessage::set(IData* data)
 {
-    //mData.reset(data);
+    mData.reset(data);
 }
 
-const IData* CTextMessage::get()
+const IData* CTextMessage::get() const
 {
     return mData.get();
 }

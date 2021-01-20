@@ -22,16 +22,13 @@ public:
     /** Access mData
      * \return The message string
      */
-    const std::string getString();
-
-protected:
+    const std::string getString() const;
 
 private:
-    /** Assignment operator - avoid
-     */
-    CTextData& operator=(const CTextData& other) ;
+    // Assignment operator - avoid
+    //CTextData& operator=(const CTextData& other) ;
 
-    const std::string mString;
+    std::string mString;
 };
 
 #endif // CTEXTDATA_H

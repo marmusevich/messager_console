@@ -1,3 +1,4 @@
 /bin
 /common/*.depend
 /common/*.layout
+*.layout

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="messager_console">
+		<Project filename="common/common_test.cbp" />
+		<Project filename="common/common_lib.cbp" />
+		<Project filename="client/client.cbp" />
+		<Project filename="client/client_test.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>
